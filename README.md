@@ -46,7 +46,8 @@ The main program is `tool.py`.
 
 # Algorithms Are:
 ## 1.
-## 2. 
+## 2. Morse Code:
+Morse Cipher turns letters and numbers into dots . and dashes -. Spaces between words are written as /.
 ## 3. DES (Data Encryption Standard):
 A symmetric-key block cipher using 8-byte keys.
 -How to run it and ENCRYPT file(input.txt) open terminal and run this:
@@ -61,7 +62,7 @@ python tool.py --algo des --mode decrypt --infile enc.txt --outfile decrypted.tx
 ## Group (5), The Members names (Section F1): 
 
 - Jory Hady Alharbi  
-- Member 2  
+- Amnah Abdullah Mukhtar 
 - Member 3  
 - Member 4  
 - Member 5  
