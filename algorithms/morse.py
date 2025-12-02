@@ -1,46 +1,48 @@
 # algorithms/morse.py
 
-MORSE_DICT = {
-    'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
-    'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
-    'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---',
-    'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-',
-    'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--',
-    'Z': '--..',
-    '0': '-----', '1': '.----', '2': '..---', '3': '...--',
-    '4': '....-', '5': '.....', '6': '-....', '7': '--...',
-    '8': '---..', '9': '----.',
+MORSE_TABLE = {
+"A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".",
+"F": "..-.", "G": "--.", "H": "....", "I": "..", "J": ".---",
+"K": "-.-", "L": ".-..", "M": "--", "N": "-.", "O": "---",
+"P": ".--.", "Q": "--.-", "R": ".-.", "S": "...", "T": "-",
+"U": "..-", "V": "...-", "W": ".--", "X": "-..-", "Y": "-.--",
+"Z": "--..",
+"0": "-----", "1": ".----", "2": "..---", "3": "...--",
+"4": "....-", "5": ".....", "6": "-....", "7": "--...",
+"8": "---..", "9": "----."
 }
 
-REVERSE_MORSE = {v: k for k, v in MORSE_DICT.items()}
+# Reverse 
+MORSE_REVERSE = {code: ch for ch, code in MORSE_TABLE.items()}
 
 
-def encrypt(text):
-    text = text.upper()
-    encrypted = []
+def encrypt(text: str) -> str:
 
-    for char in text:
-        if char == " ":
-            encrypted.append("/")   # Slash for word separator
-        elif char in MORSE_DICT:
-            encrypted.append(MORSE_DICT[char])
-        else:
-            encrypted.append("?")   # Unknown char
+text = text.upper()
+output = []
 
-    return " ".join(encrypted)
+for ch in text:
+if ch == " ":
+output.append("/") # Word separator
+elif ch in MORSE_TABLE:
+output.append(MORSE_TABLE[ch])
+else:
+output.append("#") # Unknown symbol
+
+return " ".join(output)
 
 
-def decrypt(morse_code):
-    words = morse_code.split(" / ")
-    decoded_words = []
+def decrypt(morse: str) -> str:
 
-    for word in words:
-        letters = word.split()
-        decoded = ""
+words = morse.split(" / ")
+decoded_words = []
 
-        for symbol in letters:
-            decoded += REVERSE_MORSE.get(symbol, "?")
+for word in words:
+letters = word.split()
+current = ""
 
-        decoded_words.append(decoded)
+for symbol in letters:
+current += MORSE_REVERSE.get(symbol, "#")
+decoded_words.append(current)
 
-    return " ".join(decoded_words)
+return " ".join(decoded_words)
