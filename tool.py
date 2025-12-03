@@ -2,7 +2,7 @@ import argparse
 import os
 
 # Import algorithms
-from algorithms import reilfence
+from algorithms import railfence
 from algorithms import morse
 from algorithms import des_module
 
