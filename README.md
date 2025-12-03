@@ -57,24 +57,35 @@ Open the the file 'tool.py' and run it.
 5- The program will display the result immediately and allow you to run another operation or exit.
 
 Example:
+
 Welcome to Group 5 Encryption/Decryption Tool!
 
 Select the algorithm:
+
 1 - Rail Fence
+
 2 - Morse Code
+
 3 - DES
+
 4 - Exit
+
 Enter the algorithm number: 1
 
 Select the operation:
+
 1 - Encrypt
+
 2 - Decrypt
+
 Enter the operation number: 1
 
 Enter the text: HELLO WORLD
+
 Enter the number of Rails: 3
 
 Result:
+
 HOLELWRDLO
 
 # Algorithms Are:
