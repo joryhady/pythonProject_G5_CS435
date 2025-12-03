@@ -46,7 +46,7 @@ The main program is tool.py. This tool allows users to encrypt or decrypt text m
 Steps:
 - Open the the file 'tool.py' and run it.
 - Select the algorithm: Rail Fence, Morse Code, or DES
-- - Provide additional parameters if required (Rails or DES key), Algorithm-specific Inputs:
+- Provide additional parameters if required (Rails or DES key), Algorithm-specific Inputs:
 Rail Fence: User enters the number of rails (integer ≥ 2).
 DES: User enters a key (string, 8 characters recommended).
 Morse Code: No additional input required.
