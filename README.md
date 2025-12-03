@@ -43,7 +43,35 @@ PyCryptodome for DES.
 
 ## Usage (CLI):
 The main program is `tool.py`. It is an interactive program that allows you to choose the encryption/decryption algorithm, enter the text, and provide any additional parameters such as the number of Rails for Rail Fence or a key for DES.
+Steps:
+Open the the file 'tool.py' and run it.
 
+1- Select the algorithm: Rail Fence, Morse Code, or DES
+2- Choose the operation: Encrypt or Decrypt
+3- Enter the text to process
+4- Provide additional parameters if required (Rails or DES key)
+5- The program will display the result immediately and allow you to run another operation or exit.
+
+Example:
+Welcome to Group 5 Encryption/Decryption Tool!
+
+Select the algorithm:
+1 - Rail Fence
+2 - Morse Code
+3 - DES
+4 - Exit
+Enter the algorithm number: 1
+
+Select the operation:
+1 - Encrypt
+2 - Decrypt
+Enter the operation number: 1
+
+Enter the text: HELLO WORLD
+Enter the number of Rails: 3
+
+Result:
+HOLELWRDLO
 
 # Algorithms Are:
 ## 1.
