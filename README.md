@@ -42,7 +42,8 @@ Jory in DES Algorithm needed an external library which was:
 PyCryptodome for DES.
 
 ## Usage (CLI):
-The main program is `tool.py`.
+The main program is `tool.py`. It is an interactive program that allows you to choose the encryption/decryption algorithm, enter the text, and provide any additional parameters such as the number of Rails for Rail Fence or a key for DES.
+
 
 # Algorithms Are:
 ## 1.
