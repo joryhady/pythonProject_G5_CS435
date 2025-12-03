@@ -1,4 +1,4 @@
-# algorithms/morse.py
+# Morse Code Cipher-By Amnah
 
 MORSE_TABLE = {
 "A": ".-", "B": "-...", "C": "-.-.", "D": "-..", "E": ".",
