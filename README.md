@@ -47,9 +47,13 @@ Steps:
 Open the the file 'tool.py' and run it.
 
 1- Select the algorithm: Rail Fence, Morse Code, or DES
+
 2- Choose the operation: Encrypt or Decrypt
+
 3- Enter the text to process
+
 4- Provide additional parameters if required (Rails or DES key)
+
 5- The program will display the result immediately and allow you to run another operation or exit.
 
 Example:
