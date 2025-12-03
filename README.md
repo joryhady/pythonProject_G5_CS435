@@ -42,14 +42,20 @@ Jory in DES Algorithm needed an external library which was:
 PyCryptodome for DES.
 
 ## Usage (CLI):
-The main program is `tool.py`. It is an interactive program that allows you to choose the encryption/decryption algorithm, enter the text, and provide any additional parameters such as the number of Rails for Rail Fence or a key for DES.
+The main program is tool.py. This tool allows users to encrypt or decrypt text messages stored in a file using one of three cryptographic algorithms: Rail Fence, Morse Code, or DES.
 Steps:
 - Open the the file 'tool.py' and run it.
 - Select the algorithm: Rail Fence, Morse Code, or DES
+- - Provide additional parameters if required (Rails or DES key), Algorithm-specific Inputs:
+Rail Fence: User enters the number of rails (integer ≥ 2).
+DES: User enters a key (string, 8 characters recommended).
+Morse Code: No additional input required.
 - Choose the operation: Encrypt or Decrypt
-- Enter the text to process
-- Provide additional parameters if required (Rails or DES key)
-- The program will display the result immediately and allow you to run another operation or exit.
+For encryption, the tool always reads from input.txt and writes output to enc.txt.
+For decryption, the tool asks which file to decrypt.
+- Result:
+The resulting encrypted or decrypted text is printed to the screen.
+The result is also saved to the respective output file (enc.txt or dec.txt).
 
 Example:
 
@@ -67,6 +73,8 @@ Select the algorithm:
 
 Enter the algorithm number: 1
 
+Enter the number of Rails: 3
+
 Select the operation:
 
 1 - Encrypt
@@ -75,13 +83,12 @@ Select the operation:
 
 Enter the operation number: 1
 
-Enter the text: HELLO WORLD
-
-Enter the number of Rails: 3
-
 Result:
 
 HOLELWRDLO
+
+Operation completed! Output saved in 'enc.txt'
+
 
 # Algorithms Are:
 ## 1.
