@@ -47,7 +47,11 @@ The main program is `tool.py`.
 # Algorithms Are:
 ## 1.
 ## 2. Morse Code:
-Morse Cipher turns letters and numbers into dots . and dashes -. Spaces between words are written as /.
+Morse Cipher turns letters and numbers into dots . and dashes -. Spaces between words are written as /, and dose not require any key.
+-Encrypt a file(input.txt):
+python tool.py --algo morse --mode encrypt --infile input.txt --outfile enc.txt
+-Decrypt a file(enc.txt):
+python tool.py --algo morse --mode decrypt --infile enc.txt --outfile decrypted.txt
 ## 3. DES (Data Encryption Standard):
 A symmetric-key block cipher using 8-byte keys.
 -How to run it and ENCRYPT file(input.txt) open terminal and run this:
