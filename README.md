@@ -114,7 +114,7 @@ python tool.py --algo des --mode decrypt --infile enc.txt --outfile decrypted.tx
 - Jory Hady Alharbi  
 - Amnah Abdullah Mukhtar 
 - Afnan Amin  
-- Member 4  
+- Rawan AL-balawi 
 - Member 5  
 - Member 6 
 
