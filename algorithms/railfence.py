@@ -1,6 +1,6 @@
 # algorithms/railfence.py
 
-def RailFenceEncrypt(plaintext, key):
+def encrypt(plaintext, key):
     plaintext = "".join(plaintext.split())
     if key <= 1:
         return plaintext
@@ -31,7 +31,7 @@ def RailFenceEncrypt(plaintext, key):
     return "".join(cipher_text)
 
 
-def RailFenceDecrypt(ciphertext, key):
+def decrypt(ciphertext, key):
     if key <= 1:
         return ciphertext
         

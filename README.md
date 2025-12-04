@@ -115,7 +115,8 @@ python tool.py --algo des --mode decrypt --infile enc.txt --outfile decrypted.tx
 - Amnah Abdullah Mukhtar 
 - Afnan Amin  
 - Rawan AL-balawi 
-- Member 5  
-- Member 6 
+- Dima Alchehabi
+- Lama Alhujouri 
 
-## For any issues, call the team leader jory(0500415233).
+
+## For any issues, call the team leader jory email me at (joryhadialharbi@gmail.com) 
