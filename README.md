@@ -16,6 +16,7 @@ This tool allows users to:
 - Choose between three algorithms (Rail Fence, Morse, DES)  
 - Provide keys (for DES and Rail Fence)  
 - Use a Command-Line Interface (CLI)
+- Select from multiple input files for decryption per algorithm
 
 The program reads from an input text file and writes the results to an output file.
 
@@ -32,8 +33,12 @@ CS435_Group5/
 │ ├── des_module.py
 │
 ├── examples/
-│ ├── sample_input.txt
-│ ├── sample_output.txt
+│ ├── rail_input.txt
+│ ├── rail_enc.txt
+│ ├── morse_input.txt
+│ ├── morse_enc.txt
+│ ├── des_input.txt
+│ ├── des_enc.txt
 │
 └── README.md
 
@@ -51,7 +56,7 @@ Rail Fence: User enters the number of rails (integer ≥ 2).
 DES: User enters a key (string, 8 characters recommended).
 Morse Code: No additional input required.
 - Choose the operation: Encrypt or Decrypt
-For encryption, the tool always reads from input.txt and writes output to enc.txt.
+For encryption, the tool always reads from input file (rail_input.txt/ morse_input.txt/ des_input.txt) and writes output to enc.txt.
 For decryption, the tool asks which file to decrypt.
 - Result:
 The resulting encrypted or decrypted text is printed to the screen.
@@ -91,22 +96,46 @@ Operation completed! Output saved in 'enc.txt'
 
 
 # Algorithms Are:
-## 1.
+## 1.Rail Fence Cipher:
+Encrypts and decrypts text using a zigzag pattern across the specified number of rails.
+Multiple input files supported for decryption (rail_input.txt, rail_enc.txt, rail_extra.txt).
 ## 2. Morse Code:
 Morse Cipher turns letters and numbers into dots . and dashes -. Spaces between words are written as /, and dose not require any key.
--Encrypt a file(input.txt):
-python tool.py --algo morse --mode encrypt --infile input.txt --outfile enc.txt
--Decrypt a file(enc.txt):
-python tool.py --algo morse --mode decrypt --infile enc.txt --outfile decrypted.txt
+-Encrypt a file(morse_input.txt):
+python tool.py --algo morse --mode encrypt --infile mores_input.txt --outfile enc.txt
+-Decrypt a file(mores_enc.txt):
+python tool.py --algo morse --mode decrypt --infile morse_enc.txt --outfile decrypted.txt
+Additional input files supported (morse_input.txt, morse_enc.txt, morse_extra.txt)
 ## 3. DES (Data Encryption Standard):
 A symmetric-key block cipher using 8-byte keys.
--How to run it and ENCRYPT file(input.txt) open terminal and run this:
-python tool.py --algo des --mode encrypt --infile input.txt --outfile enc.txt --key "12345678"
--How to decrypt file(enc.txt):
-python tool.py --algo des --mode decrypt --infile enc.txt --outfile decrypted.txt --key "12345678"
+-How to run it and ENCRYPT file(des_input.txt) open terminal and run this:
+python tool.py --algo des --mode encrypt --infile des_input.txt --outfile enc.txt --key "12345678"
+-How to decrypt file(des_enc.txt):
+python tool.py --algo des --mode decrypt --infile des_enc.txt --outfile decrypted.txt --key "12345678"
 
 
 ## Testing:
+# Rail Fence:
+ - rail_input.txt:
+Hello everyone this is just a test for Rail Fence Algorithm.
+ - rail_enc.txt:
+HvestregmeeentijaeoRFnlolorosutsfalcArtlyistiei.
+# Morse Code:
+ - morse_input.txt:
+OKAY this is the testing for morse algorithm.
+ - morse_enc.txt:
+--- -.- .- -.-- / - .... .. ... / .. ... / - .... . /
+. ... - .. -. --. / ..-. --- .-. / -- --- .-. ... . / 
+.- .-.. --. --- .-. .. - .... --
+
+# DES:
+ - des_input.txt:
+Hello jojo is testing her algorithm des.
+ - des_enc.txt: 
+cd96cff8dafc92e5c7605eb004712f6aabf8230eba36dc42fcc
+356a7a48fea8fa0fb0d69a3d07876
+
+All algorithms successfully encrypt and decrypt the input text.
 
 
 ## Group (5), The Members names (Section F1): 
@@ -119,4 +148,5 @@ python tool.py --algo des --mode decrypt --infile enc.txt --outfile decrypted.tx
 - Lama Alhujouri 
 
 
-## For any issues, call the team leader jory email me at (joryhadialharbi@gmail.com) 
+## For any issues, call the team leader:
+## jory email me at (joryhadialharbi@gmail.com) 
