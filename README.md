@@ -149,4 +149,4 @@ All algorithms successfully encrypt and decrypt the input text.
 
 
 ## For any issues, call the team leader:
-## jory email me at (joryhadialharbi@gmail.com) 
+jory email me at (joryhadialharbi@gmail.com) 
